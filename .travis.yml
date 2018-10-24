@@ -1,4 +1,15 @@
 language: ruby
 rvm:
   - 2.5
-cache: bundler
+node_js:
+  - lts/*
+branches:
+  only:
+    - release
+install:
+  - npm install -g firebase-tools
+  - bundle install --jobs=3 --retry=3
+script:
+  - jekyll build
+after_success:
+  - firebase deploy --token $FIREBASE_TOKEN
