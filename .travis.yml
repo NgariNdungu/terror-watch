@@ -5,13 +5,14 @@ jobs:
   include:
     - stage: test
       install:
-        - npm install -g firebase-tools
         - gem install bundler
         - bundle install --jobs=3 --retry=3
       script:
         - jekyll build
     - stage: deploy
       if: branch = release
+      install:
+        - npm install -g firebase-tools
       script:
         - firebase deploy --token $FIREBASE_TOKEN
 branches:
