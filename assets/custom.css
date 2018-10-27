@@ -1,0 +1,17 @@
+.report-button {
+  background-color: #ba000d;
+  color: white;
+  text-align: center;
+  font-size: 24px;
+  border-radius: 4px;
+  border: 1px solid green;
+}
+
+.fdb-block {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.page-content {
+  padding: 0 0;
+}
