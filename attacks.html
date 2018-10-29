@@ -1,0 +1,46 @@
+---
+layout: page
+permalink: /attacks/
+title: Attacks
+---
+<section class="fdb-block">
+    <div class="container">
+      <div class="row">
+        <div class="col text-center">
+          <div class="row text-left pt-4">
+            <div class="col-12 col-md-9">
+              <!-- loop over attacks collection -->
+                <ul class="post-list">
+                  {%- for attack in site.attacks -%}
+                  <li>
+                    {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+                    <div class="container">
+                      <div class="row">
+                        <div class="col text-center">
+                          <div class="row text-left pt-4">
+                            <div class="col-12 col-md-2">
+                              <span class="post-meta">{{ attack.date | date: date_format }}</span>
+                            </div>
+                            <div class="col-12 col-md-10">
+                              <h3>
+                                <a class="post-link" href="{{ attack.url | relative_url }}">
+                                  {{ attack.title | escape }}
+                                </a>
+                              </h3>
+                              Deaths: {{ attack.deaths }}<br>
+                              Injuries: {{ attack.injuries }}<br>
+                              Location: {{ attack.location }}
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  {%- endfor -%}
+                </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>

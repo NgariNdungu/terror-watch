@@ -1,0 +1,32 @@
+  <header>
+    <div class="container">
+      <nav class="navbar navbar-expand-md">
+        <a class="navbar-brand" href="{% link index.html %}">
+          <h1>{{ site.title }}</h1>
+        </a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav3" aria-controls="navbarNav3" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav3">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="{% link index.html %}">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{% link attacks.html %}">Attacks</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{% link blog.html %}">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{% link about.md %}">About</a>
+            </li>
+          </ul>
+
+          <a class="btn btn-empty ml-md-3" href="{% link report.md %}">Report</a>
+        </div>
+      </nav>
+    </div>
+  </header>
