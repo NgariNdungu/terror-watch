@@ -16,7 +16,7 @@ var tileOptions = {
 var osmBase = L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', tileOptions).addTo(map);
 
 // set up attacks GeoJSON
-var attacksJson = JSON.parse('{{site.data.attacks}}'.replace(/=>/g, ":"))
+var attacksJson = JSON.parse('{{ site.data.attacks | jsonify }}')
 
 var geoJsonOptions = {
   filter: function (feature) {
@@ -29,8 +29,8 @@ var geoJsonOptions = {
     var attack = '{{ attack.attack-id }}'
     if (attack == feature.properties.attack_id) { 
     // create pop-up content and attach to layer
-        console.log("hit if block")
         var popupContent = `<h3>{{ attack.title }}</h3>
+          <p>Date: {{ attack.date | date: "%b %d, %y" }}
           <p>Deaths: {{ attack.deaths }} </p>
           <p>Injuries: {{ attack.injuries }} </p>
           <p>Details: <a href="{{ attack.url }}">{{ attack.url }}</a>`

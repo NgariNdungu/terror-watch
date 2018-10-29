@@ -1,8 +1,9 @@
     <div class="container">
       <div class="row justify-content-center">
-        <div class="col text-center">
-          <h4>Recent Posts</h4>
-          <p>List of previous blog posts</p>
+        <div class="col">
+          <h3>Related Content</h3>
+          <p> <a href="{{ page.previous.url }}">Prev: {{page.previous.title}}</a></p>
+          <p> <a href="{{ page.next.url }}">Next: {{page.next.title}}</a></p>
         </div>
       </div>
     </div>
