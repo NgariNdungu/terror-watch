@@ -1,5 +1,6 @@
 ---
 title: Westgate Mall Attack
+attack-id: Wes_13
 date: 2013-09-21
 deaths: 67
 injuries: 200

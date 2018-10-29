@@ -1,5 +1,6 @@
 ---
 title: Garissa University Shootings
+attack-id: Gar_15
 date: 2015-04-02
 deaths: 148
 injuries: 79

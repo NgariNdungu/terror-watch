@@ -1,0 +1,13 @@
+{
+"type": "FeatureCollection",
+"name": "attacks",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "attack_id": "Emb_98" }, "geometry": { "type": "Point", "coordinates": [ 36.8492, -1.2959 ] } },
+{ "type": "Feature", "properties": { "attack_id": "Mra_14" }, "geometry": { "type": "Point", "coordinates": [ 40.8643, 3.49 ] } },
+{ "type": "Feature", "properties": { "attack_id": "Mpe_14" }, "geometry": { "type": "Point", "coordinates": [ 40.7178, -2.0665 ] } },
+{ "type": "Feature", "properties": { "attack_id": "Par_02" }, "geometry": { "type": "Point", "coordinates": [ 39.7024, -4.0006 ] } },
+{ "type": "Feature", "properties": { "attack_id": "Gar_15" }, "geometry": { "type": "Point", "coordinates": [ 40.1157, -0.2392 ] } },
+{ "type": "Feature", "properties": { "attack_id": "Wes_13" }, "geometry": { "type": "Point", "coordinates": [ 36.9128, -1.2602 ] } }
+]
+}

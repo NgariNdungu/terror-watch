@@ -1,6 +1,7 @@
 ---
 layout: post
 title: U.S Embassy Bombing
+attack-id: Emb_98
 date: 1998-08-07 10:00
 deaths: 213
 injuries: 4000
