@@ -22,13 +22,13 @@ styles: <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leafle
   <section class="fdb-block">
     <div class="container">
       <div class="row justify-content-center">
-        <div class="col col-md-8 text-center">
+        <div class="col col-md-8">
+        <h2>Attacks list</h2>
           <p class="text-h3">
-            <ul>
-              <li>Garissa University attack</li>
-              <li>Westgate Mall attack</li>
-              <li>Mandera Quarry</li>
-              <li>US Embassy Bombing</li>
+            <ul class="post-list">
+              {%- for attack in site.attacks -%}
+              <li><a href="{{attack.url}}">{{attack.title}}</a></li>
+              {%- endfor -%}
             </ul>
           </p>
         </div>

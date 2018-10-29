@@ -8,8 +8,8 @@
 }
 
 .fdb-block {
-  padding-top: 0;
-  padding-bottom: 0;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .page-content {
@@ -24,4 +24,15 @@ textarea {
 
 .wrapper {
   max-width: 800px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.wrapper .col-12 {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.navbar-brand h1 {
+  font-size: 4vw;
 }
